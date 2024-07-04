@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oxanium:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to bottom, #fff, #cdcdcd, #b1b1b1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient2 {
+    background: linear-gradient(to bottom, #737373, #6d6d6d, #1d1c1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .logo-gradient {
+    background: linear-gradient(to right bottom, #7245e3, #441fa5, #6f3eec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient1 {
+    -webkit-box-shadow: 0px 0px 300px 200px rgba(230, 21, 174, 0.4);
+    -moz-box-shadow: 0px 0px 300px 200px rgba(230, 21, 174, 0.4);
+    box-shadow: 0px 0px 300px 200px rgba(230, 21, 174, 0.4);
+  }
+  .gradient2 {
+    -webkit-box-shadow: 0px 0px 300px 200px rgba(86, 35, 216, 0.4);
+    -moz-box-shadow: 0px 0px 300px 200px rgba(86, 35, 216, 0.4);
+    box-shadow: 0px 0px 300px 200px rgba(86, 35, 216, 0.4);
+  }
+}
