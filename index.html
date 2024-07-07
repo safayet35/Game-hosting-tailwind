@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body class="font-heading bg-background">
     <div id="main">
@@ -107,16 +108,20 @@
           </div>
         </div>
       </div>
-      <section id="price-section" class="h-screen w-full px-2 py-20">
+      <!-- second section for pricing  -->
+      <section id="price-section" class="relative min-h-screen w-full px-2 py-20 pb-10">
+        <div id="" class="h-0 w-0 gradient2 absolute left-0 top-[400px]"></div>
         <h2 class="text-[20px] font-semibold border-[#868588] border-2 w-fit px-6 py-1 mx-auto rounded-3xl text-white">Pricing plans</h2>
         <h1 class="text-white text-3xl text-gradient md:text-6xl my-8 font-bold text-center md:font-bold">Choose plan for you</h1>
-        <div id="all-plans" class="w-full grid">
-          <div id="single-plan" class="w-full py-14 px-5 rounded-2xl border-[#545454b8] border-2">
+        <!-- All plans -->
+        <div id="all-plans" class="w-full grid grid-cols-1 grid-rows-1 gap-12 md:grid-cols-2 md:gap-5 lg:grid-cols-4">
+          <!-- first card -->
+          <div id="single-plan" class="w-full py-14 px-5 rounded-2xl border-[#545454b8] border-2 z-10">
             <div class="w-full py-2 bg-[#303030] rounded-[4px] flex items-center justify-center">
               <h3 class="text-white text-2xl font-bold">4 Slots</h3>
             </div>
             <div id="price" class="my-6">
-              <h1 class="text-white text-4xl font-[600]">$3.59<span class="text-2xl text-primary">/mo</span></h1>
+              <h1 class="text-white text-4xl font-[600]">$3.59<span class="text-2xl text-lightblue">/mo</span></h1>
               <p class="text-text">Normally <span class="line-through">$9.99</span></p>
             </div>
             <div id="server-locations" class="text-white flex flex-col gap-3">
@@ -127,14 +132,543 @@
               </div>
             </div>
             <div id="features" class="my-4">
-              <h3 class="text-white font-semibold">Top Features</h3>
-              <ul id="all-features" class="list-none text-text">
-                <li>Super Quick Setup</li>
+              <h3 class="text-white font-semibold my-3">Top Features</h3>
+              <ul id="all-features" class="list-none text-text flex flex-col gap-3">
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Super Quick Setup</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Premium Hardware</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> DDos Protection</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> 24/7 Customer Support</li>
               </ul>
+            </div>
+            <button class="text-white blue-gradient w-full py-2 font-bold rounded-[8px] my-4">GET MONTHLY PLAN</button>
+            <p class="text-text">Auto re-news at regular rate</p>
+          </div>
+          <!-- Second card -->
+          <div id="" class="w-full py-14 px-5 rounded-2xl border-[#545454b8] border-2">
+            <div class="w-full py-2 bg-[#303030] rounded-[4px] flex items-center justify-center border-b-[1px] border-gradient">
+              <h3 class="text-white text-2xl font-bold">10 Slots</h3>
+            </div>
+            <div id="price" class="my-6">
+              <h1 class="text-white text-4xl font-[600]">$5.59<span class="text-2xl text-lightblue">/mo</span></h1>
+              <p class="text-text">Normally <span class="line-through">$15.99</span></p>
+            </div>
+            <div id="server-locations" class="text-white flex flex-col gap-3">
+              <h1>Server Location</h1>
+              <div id="locations" class="flex border-[1px] rounded-2xl p-2 border-[#545454b8] items-center gap-3">
+                <img class="w-10" src="./images/asset 11.png" alt="" />
+                <p class="font-semibold">London,England</p>
+              </div>
+            </div>
+            <div id="features" class="my-4">
+              <h3 class="text-white font-semibold my-3">Top Features</h3>
+              <ul id="all-features" class="list-none text-text flex flex-col gap-3">
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Super Quick Setup</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Premium Hardware</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> DDos Protection</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> 24/7 Customer Support</li>
+              </ul>
+            </div>
+            <button class="text-white blue-gradient w-full py-2 font-bold rounded-[8px] my-4">GET MONTHLY PLAN</button>
+            <p class="text-text">Auto re-news at regular rate</p>
+          </div>
+          <!-- third best seller card -->
+          <!-- <div id="wraper" class="bg-gradient px-[1px] py-[2px] rounded-2xl"> -->
+          <!--  <h2 class="text-white font-bold text-center">Best Seller</h2> -->
+          <div id="" class="relative w-full py-14 px-5 border-[#545454b8] bg-background border-[2px] border-gradient rounded-3xl overflow-x-hidden">
+            <div id="text" class="w-full left-0 bg-gradient absolute top-0 text-center py-1">
+              <h2 class="text-white font-bold">Best Seller</h2>
+            </div>
+            <div class="w-full py-2 bg-[#303030] rounded-[4px] flex items-center justify-center border-b-[1px] border-gradient">
+              <h3 class="text-white text-2xl font-bold">20 Slots</h3>
+            </div>
+            <div id="price" class="my-6">
+              <h1 class="text-white text-4xl font-[600]">$8.59<span class="text-2xl text-lightblue">/mo</span></h1>
+              <p class="text-text">Normally <span class="line-through">$24.99</span></p>
+            </div>
+            <div id="server-locations" class="text-white flex flex-col gap-3">
+              <h1>Server Location</h1>
+              <div id="locations" class="flex border-[1px] rounded-2xl p-2 border-[#545454b8] items-center gap-3">
+                <img class="w-10" src="./images/asset 11.png" alt="" />
+                <p class="font-semibold">London,England</p>
+              </div>
+            </div>
+            <div id="features" class="my-4">
+              <h3 class="text-white font-semibold my-3">Top Features</h3>
+              <ul id="all-features" class="list-none text-text flex flex-col gap-3">
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Super Quick Setup</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Premium Hardware</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> DDos Protection</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> 24/7 Customer Support</li>
+              </ul>
+            </div>
+            <button class="text-white blue-gradient w-full py-2 font-bold rounded-[8px] my-4">GET MONTHLY PLAN</button>
+            <p class="text-text">Auto re-news at regular rate</p>
+          </div>
+          <!-- </div> -->
+
+          <!-- fourth card -->
+
+          <div id="" class="w-full py-14 px-5 rounded-2xl border-[#545454b8] border-2">
+            <div class="w-full py-2 bg-[#303030] rounded-[4px] flex items-center justify-center border-b-[1px] border-gradient">
+              <h3 class="text-white text-2xl font-bold">Custom</h3>
+            </div>
+            <div id="price" class="my-6">
+              <h1 class="text-white text-4xl font-[600]">$15.59<span class="text-2xl text-lightblue">/mo</span></h1>
+              <p class="text-text">Normally <span class="line-through">$36.99</span></p>
+            </div>
+            <div id="server-locations" class="text-white flex flex-col gap-3">
+              <h1>Server Location</h1>
+              <div id="locations" class="flex border-[1px] rounded-2xl p-2 border-[#545454b8] items-center gap-3">
+                <img class="w-10" src="./images/asset 11.png" alt="" />
+                <p class="font-semibold">London,England</p>
+              </div>
+            </div>
+            <div id="features" class="my-4">
+              <h3 class="text-white font-semibold my-3">Top Features</h3>
+              <ul id="all-features" class="list-none text-text flex flex-col gap-3">
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Super Quick Setup</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> Premium Hardware</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> DDos Protection</li>
+                <li><i class="fa-solid fa-check text-white bg-primary rounded-full p-1 text-[12px] mr-2"></i> 24/7 Customer Support</li>
+              </ul>
+            </div>
+            <button class="text-white blue-gradient w-full py-2 font-bold rounded-[8px] my-4">GET MONTHLY PLAN</button>
+            <p class="text-text">Auto re-news at regular rate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- second section end -->
+
+      <!-- game collection section -->
+      <section id="game-list" class="w-full min-h-screen px-2 py-20">
+        <h2 class="text-[15px] font-semibold border-[#868588] border-[1px] w-fit px-4 py-1 rounded-3xl text-white">MOST COMPLETE</h2>
+        <div id="tittle" class="flex flex-col md:flex-row md:justify-between md:text-[12px] md:items-center">
+          <h1 class="text-gradient text-4xl font-semibold my-5">Game Collection</h1>
+          <ul class="flex list-none flex-wrap gap-2">
+            <li class="bg-[#303030] w-fit text-white text-white font-bold py-1 px-4 rounded-[5px]">ALL GAMES</li>
+            <li class="bg-[#303030] w-fit text-white text-white font-bold py-1 px-4 rounded-[5px]">FPS</li>
+            <li class="bg-[#303030] w-fit text-white text-white font-bold py-1 px-4 rounded-[5px]">POPULAR</li>
+            <li class="bg-[#303030] w-fit text-white text-white font-bold py-1 px-4 rounded-[5px]">SANDBOX</li>
+            <li class="bg-[#303030] w-fit text-white text-white font-bold py-1 px-4 rounded-[5px] blue-gradient">SURVIVAL</li>
+          </ul>
+        </div>
+        <!-- all game design starts here -->
+        <div id="all-games" class="w-full grid grid-cols-1 grid-rows-1 gap-6 py-8 sm:grid-cols-2 sm:gap-x-2 lg:grid-cols-3">
+          <!-- first game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Shadow Of Night</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 24.webp" alt="" />
+          </div>
+          <!-- second game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Alien Football</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 25.webp" alt="" />
+          </div>
+          <!-- third game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Ancient Realms</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 26.webp" alt="" />
+          </div>
+          <!-- fourth game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Thunder and City</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 27.webp" alt="" />
+          </div>
+          <!-- fifth game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Mystic Racing Z</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 28.webp" alt="" />
+          </div>
+          <!-- sixth game -->
+          <div class="w-full px-2 relative">
+            <h4 class="text-white font-bold py-[2px] px-3 absolute top-4 right-4 bg-gradient rounded-[6px]">20% OFF</h4>
+            <div class="absolute bottom-7 left-10 flex flex-col gap-2">
+              <h2 class="text-white font-extrabold">Silent Wrath</h2>
+              <p class="text-text">Starting at <span class="bg-primary text-white font-bold py-1 px-1 rounded-[2px]">$14.99</span></p>
+            </div>
+            <img class="w-full h-auto" src="./images/asset 29.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="premium-feautures" class="min-h-fit w-full px-4 py-10">
+        <h2 class="text-[15px] font-semibold border-[#868588] border-[1px] w-fit my-2 px-4 py-1 rounded-3xl text-white">Incredibly features</h2>
+        <h1 class="text-gradient text-4xl font-semibold my-5">Premium Features</h1>
+        <!-- all four cards design -->
+        <div id="all-features" class="grid grid-cols-1 sm:grid-cols-4">
+          <div class="flex flex-col gap-3 my-5 px-2">
+            <i class="fa-solid fa-sliders logo-gradient text-6xl"></i>
+            <h3 class="font-semibold text-white">Super Quick Setup</h3>
+            <p class="text-text">Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+          </div>
+          <div class="flex flex-col gap-3 my-5 px-2">
+            <i class="fa-solid fa-microchip logo-gradient text-6xl"></i>
+            <h3 class="font-semibold text-white">Premium Hardware</h3>
+            <p class="text-text">Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+          </div>
+          <div class="flex flex-col gap-3 my-5 px-2">
+            <i class="fa-solid fa-shield logo-gradient text-6xl"></i>
+            <h3 class="font-semibold text-white">DDos Protection</h3>
+            <p class="text-text">Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+          </div>
+          <div class="flex flex-col gap-3 my-5 px-2">
+            <i class="fa-regular fa-message logo-gradient text-6xl"></i>
+            <h3 class="font-semibold text-white">Fast Support</h3>
+            <p class="text-text">Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+          </div>
+        </div>
+      </section>
+      <!-- customer review section -->
+      <section id="customer-review" class="min-h-fit w-full px-4 py-10 relative">
+        <div id="" class="h-0 w-0 gradient1 absolute left-0 top-[400px]"></div>
+        <h2 class="text-[15px] font-semibold border-[#868588] border-[1px] w-fit my-2 px-4 py-1 rounded-3xl text-white">Customer Reviews</h2>
+        <h1 class="text-gradient text-5xl font-semibold my-10">4.85 out of 5</h1>
+        <swiper-container class="mySwiper h-80 grid grid-cols-1 md:w-1/2 md:mx-auto" pagination="true" pagination-clickable="true" navigation="false" space-between="30" loop="true">
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"I've been using Playhost for my game server needs, and I couldn't be happier. The server uptime is fantastic, and the customer support team is always quick to assist with any issues."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 36.jpeg" alt="" />
+              <p class="text-white font-semibold">Michael S.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"Running a game server used to be a hassle, but Playhost makes it easy. The control panel is user-friendly, and I love how they handle server maintenance and updates."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 37.jpeg" alt="" />
+              <p class="text-white font-semibold">Rober L.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"I've tried several hosting providers in the past, and Playhost is by far the best. Their server performance is top-notch, and I've never experienced lag while playing with friends."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 38.jpeg" alt="" />
+              <p class="text-white font-semibold">Jake M.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"As a new server owner, I was worried about setup and configuration, but Playhost made it a breeze. They have detailed tutorials and helpful support, which made the process smooth."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 39.jpeg" alt="" />
+              <p class="text-white font-semibold">Alex P.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"The flexibility Playhost offers is incredible. I can easily switch between game servers or even host multiple games on the same plan. It's a gamer's dream come true!"</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 40.jpeg" alt="" />
+              <p class="text-white font-semibold">Carlos R.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">"I've been a loyal customer of Playhost for years now. Their dedication to keeping their hardware up-to-date ensures my gaming experience is always optimal."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 41.jpeg" alt="" />
+              <p class="text-white font-semibold">Edward B..</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">""When our community needed a reliable server for our esports tournaments, we turned to Playhost, and they've never let us down. Their servers are perfect for competitive gaming."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 34.jpeg" alt="" />
+              <p class="text-white font-semibold">Daniel H.</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="w-full bg-[#252629] py-10 px-7 flex flex-col gap-4 rounded-3xl z-10 justify-center">
+            <!-- all stars -->
+            <div class="flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-white">""The DDoS protection from Playhost is a lifesaver. We used to get attacked regularly, but since switching to their servers, we haven't had any downtime."</p>
+            <!-- customer -->
+            <div class="flex gap-4 items-center">
+              <img class="rounded-full w-12" src="./images/asset 35.jpeg" alt="" />
+              <p class="text-white font-semibold">Bryan G.</p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+      <!-- customer review section ends here -->
+      <section id="faq" class="min-h-fit w-full px-4 py-10">
+        <h2 class="text-[15px] font-semibold border-[#868588] border-[1px] w-fit my-2 px-4 py-1 rounded-3xl text-white">Do you have</h2>
+        <h1 class="text-gradient text-5xl font-bold my-5">Any questions?</h1>
+        <!-- all faqs here -->
+        <div id="all-faqs" class="w-full min-h-fit flex flex-col md:flex-row gap-6">
+          <div id="first-faq">
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">What is game hosting?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Game hosting refers to the process of renting or setting up servers to run multiplayer online games. These servers allow players to connect and play together in the same game world.</p>
+              </div>
+            </div>
+
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">Why do I need game hosting?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Game hosting is essential for multiplayer gaming. It provides a dedicated server where players can join, ensuring a smooth and lag-free gaming experience. It also allows you to customize game settings and mods.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">How do I choose a game hosting provider?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Consider factors like server location, performance, scalability, customer support, and price when choosing a game hosting provider. Read reviews and ask for recommendations from fellow gamers.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">What types of games can I host?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">You can host various types of games, including first-person shooters, role-playing games, survival games, strategy games, and more. The type of game hosting you need depends on the game's requirements.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">What is server latency or ping?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Server latency or ping measures the time it takes for data to travel between your computer and the game server. Lower ping values indicate better responsiveness and less lag.</p>
+              </div>
+            </div>
+          </div>
+          <div id="second-faq">
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">How do I manage a game server?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Game server management varies depending on the hosting provider and game type. Typically, you'll have access to a control panel or command-line interface to configure settings, mods, and player access.</p>
+              </div>
+            </div>
+
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">Can I run mods on my game server?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Yes, many game hosting providers support mods. You can install and manage mods to enhance gameplay or customize the game to your liking.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">What is DDoS protection, and do I need it?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">DDoS (Distributed Denial of Service) protection helps defend your game server from malicious attacks that could disrupt gameplay. It's essential for maintaining server stability, especially for popular games.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">How much does game hosting cost?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Game hosting costs vary depending on the provider, server type, and game. Prices can range from a few dollars per month for small servers to hundreds for high-performance dedicated servers.</p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="flex flex-col gap-3">
+              <!-- question div -->
+              <div class="flex items-center justify-between text-white bg-[#303030] p-3 rounded-[12px]">
+                <h3 class="font-semibold">Is there 24/7 customer support?</h3>
+                <i class="fa-solid fa-angle-down blue-gradient p-2 rounded-[8px]"></i>
+              </div>
+              <!-- answer div -->
+              <div class="bg-red-200 overflow-hidden h-0">
+                <p class="text-text">Many reputable game hosting providers offer 24/7 customer support to assist with technical issues and server management.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- payment section -->
+
+      <section class="min-h-fit w-full px-4 py-14 flex gap-4 flex-col md:flex-row">
+        <div id="payment-tittles" class="w-full">
+          <h2 class="text-[15px] font-semibold border-[#868588] border-[1px] w-fit my-2 px-4 py-1 rounded-3xl text-white">Payment Methods</h2>
+          <h1 class="text-gradient text-5xl font-bold my-5">We accept</h1>
+        </div>
+        <div id="payment-info" class="w-full flex gap-4 flex-wrap">
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 42.webp" alt="" />
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 43.webp" alt="" />
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 44.webp" alt="" />
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 45.webp" alt="" />
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 46.webp" alt="" />
+          <img class="w-16 bg-[#303030] p-1 rounded-[8px]" src="./images/asset 47.webp" alt="" />
+        </div>
+      </section>
+      <footer class="bg-[#ffffff02] min-h-fit w-full px-4 py-14 flex gap-4 grid grid-cols-1">
+        <div id="" class="w-full">
+          <div id="" class="flex items-center gap-2 text-3xl">
+            <i class="fa-solid fa-gamepad logo-gradient"></i>
+            <h2 class="font-bold text-primary font-[600] text-gradient">cheaphost</h2>
+          </div>
+          <p class="text-text my-4">Lorem ipsum culpa tempor tempor eu laboris adipisicing sunt excepteur enim laborum officia eiusmod laborum sint do aliqua incididunt est aute deserunt in elit non sed ut velit ullamco aliquip. Nulla cupidatat elit amet sed labore ut et consequat nostrud laboris aliqua ex est fugiat quis aliqua duis quis esse dolor laboris non duis sunt.</p>
+        </div>
+        <div id="" class="w-full">
+          <h3 class="text-white font-bold my-3">Game Server</h3>
+          <ul class="text-text flex flex-col gap-2">
+            <li>Thunder and City</li>
+            <li>Mystic Racing Z</li>
+            <li>Silent Wrath</li>
+            <li>Funk Dungeon</li>
+            <li>Galactic Oddsey</li>
+            <li>Warfare Legend</li>
+          </ul>
+        </div>
+        <div id="" class="w-full">
+          <h3 class="text-white font-bold my-3">Pages</h3>
+          <ul class="text-text flex flex-col gap-2">
+            <li>Game Server</li>
+            <li>Knowledgebase</li>
+            <li>About Us</li>
+            <li>Affiliates</li>
+            <li>Locations</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="w-full flex flex-col gap-5">
+          <h3 class="text-white font-bold my-3">Newsletter</h3>
+          <p class="text-text">Your email is safe with us. We don’t spam.</p>
+          <h3 class="text-white font-bold my-3">Follow Us on</h3>
+          <div id="logos" class="flex flex-wrap gap-4">
+            <i class="fa-brands fa-facebook-f dark-color text-[#6a79fa] py-3 px-4 rounded-[8px]"></i>
+            <i class="fa-brands fa-twitter dark-color text-[#6a79fa] py-3 px-4 rounded-[8px]"></i>
+            <i class="fa-brands fa-discord dark-color text-[#6a79fa] py-3 px-4 rounded-[8px]"></i>
+            <i class="fa-brands fa-whatsapp dark-color text-[#6a79fa] py-3 px-4 rounded-[8px]"></i>
+            <i class="fa-brands fa-youtube dark-color text-[#6a79fa] py-3 px-4 rounded-[8px]"></i>
+          </div>
+        </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

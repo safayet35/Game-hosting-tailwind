@@ -11,7 +11,8 @@ module.exports = {
         primary: '#5623d8',
         gradient: '#e615af',
         text: '#adb7be',
-        background: '#1e1f22'
+        background: '#1e1f22',
+        lightblue: '#6a79fa'
       }
     }
   },
